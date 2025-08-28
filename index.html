@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATTO Clone</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Balans kartasi -->
+  <div class="card">
+    <h2>ATTO</h2>
+    <h1 id="balance">0 UZS</h1>
+    <p>9860 **** **** 5092</p>
+  </div>
+
+  <!-- Menyu tugmalari -->
+  <div class="menu">
+    <div onclick="makePayment()">📷 QR To‘lov</div>
+    <div onclick="addFunds()">💳 To‘ldirish</div>
+    <div onclick="showHistory()">📜 Tarix</div>
+  </div>
+
+  <!-- Tarix oynasi -->
+  <div id="history" class="history hidden"></div>
+
+  <!-- Chek modal -->
+  <div id="receipt" class="receipt">
+    <div class="receipt-box">
+      <h3>✅ To‘lov amalga oshirildi</h3>
+      <p id="receipt-amount">-0 UZS</p>
+      <small id="receipt-time"></small>
+      <button id="close-receipt">OK</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
